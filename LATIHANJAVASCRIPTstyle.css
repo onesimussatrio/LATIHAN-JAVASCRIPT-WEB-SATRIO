@@ -1,0 +1,441 @@
+
+/* ========================================
+   PENGATURAN DASAR
+======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #101014;
+    color: #ff0000;
+}
+
+/* ========================================
+   NAVBAR
+======================================== */
+.navbar {
+    background-color: rgba(16, 16, 20, 0.96);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: #f5f5f5 !important;
+    font-size: 25px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-navbar {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.nav-link {
+    color: #ff0202 !important;
+    margin-left: 18px;
+    transition: color 0.3s, border-color 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+/* MENU AKTIF */
+.navbar .nav-link.active {
+    color: #f1ff31 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #f1ff31;
+}
+
+.nav-link:hover {
+    color: #fcff31 !important;
+}
+
+/* Ikon tombol menu pada HP */
+.navbar-toggler {
+    border: 1px solid #f1ff31;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(241, 255, 49, 0.25);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* ========================================
+   HOME / HERO
+======================================== */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    padding: 150px 0 80px;
+
+    background-image: url("img/GAMBARPOSTER.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-label,
+.section-label {
+    color: #f1ff31;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 7vw, 78px);
+    font-weight: 900;
+    line-height: 1.08;
+    margin-bottom: 22px;
+    color: #ffffff;
+}
+
+.hero h1 span,
+.section-heading h2 span,
+.about-section h2 span {
+    color: #f1ff31;
+}
+
+.hero-description {
+    color: #d0d0d6;
+    font-size: 17px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+
+/* TOMBOL DAFTAR */
+.btn-daftar {
+    display: inline-block;
+    background-color: #ff3158;
+    border: 2px solid #ff3158;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-daftar:hover {
+    background-color: transparent;
+    color: #ff3158;
+    border-color: #ff3158;
+}
+
+/* ========================================
+   BAGIAN DIVISI
+======================================== */
+.section-dark {
+    background-color: #328bff;
+    padding: 90px 0;
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-heading h2,
+.about-section h2 {
+    font-size: clamp(30px, 5vw, 45px);
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    color: #000000;
+    line-height: 1.7;
+}
+
+.division-card {
+    height: 100%;
+    min-height: 200px;
+    padding: 28px;
+    background-color: #202029;
+    border: 1px solid #353540;
+    border-radius: 10px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.division-card:hover {
+    transform: translateY(-7px);
+    border-color: #ff3158;
+}
+
+.division-number {
+    color: #ff3158;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.division-card h3 {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.division-card p {
+    color: #fdfdfd;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* ========================================
+   BAGIAN TENTANG / ABOUT
+======================================== */
+.about-section {
+    background-color: #0b51e7;
+    padding: 100px 0;
+}
+
+.about-section h2 {
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.about-text {
+    color: #000000;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 0;
+}
+
+/* ========================================
+   GRAFIK CHART.JS
+======================================== */
+.chart-wrapper {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: #202029;
+    border: 1px solid #353540;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.chart-wrapper h3 {
+    color: #f1ff31;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.chart-wrapper p {
+    color: #d0d0d6;
+    line-height: 1.7;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.chart-note {
+    font-size: 12px;
+    color: #b9b9c2 !important;
+    margin-bottom: 0;
+}
+
+/* ========================================
+   BAGIAN PENDAFTARAN
+======================================== */
+.registration-section {
+    background-color: #e05e65;
+    padding: 90px 0;
+}
+
+.form-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #23232d;
+    border: 1px solid #5c5c6b;
+    border-radius: 12px;
+}
+
+.form-label {
+    color: #f7f5f5;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+.form-control,
+.form-select {
+    background-color: #1c1c1f;
+    border: 1px solid #4f4f5a;
+    color: #ffffff;
+    padding: 12px 14px;
+    border-radius: 6px;
+}
+
+.form-control::placeholder {
+    color: #e7e2e2;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #15151c;
+    color: #ffffff;
+    border-color: #fff131;
+    box-shadow: 0 0 0 0.2rem rgba(255, 49, 88, 0.2);
+}
+
+.form-select option {
+    background-color: #15151c;
+    color: #ffffff;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+.footer {
+    background-color: #0b0b0f;
+    padding: 35px 0;
+    border-top: 1px solid #292932;
+}
+
+.footer h4 {
+    color: #fffc31;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.footer p {
+    color: #b9b9c2;
+    margin-bottom: 10px;
+}
+
+.footer small {
+    color: #85858e;
+}
+
+/* ========================================
+   SMOOTH SCROLL DAN OFFSET SECTION
+======================================== */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* ========================================
+   RESPONSIVE UNTUK TABLET DAN HP
+======================================== */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .logo-navbar {
+        width: 65px;
+        height: 65px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .nav-link.active {
+        border-bottom: none;
+        border-left: 3px solid #f1ff31;
+        padding-left: 10px;
+    }
+
+    .hero {
+        min-height: 85vh;
+        padding: 120px 15px 60px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .section-dark,
+    .registration-section {
+        padding: 65px 0;
+    }
+
+    .about-section {
+        padding: 65px 0;
+    }
+
+    .form-wrapper {
+        padding: 22px;
+    }
+
+    .chart-wrapper {
+        padding: 18px;
+    }
+
+    .chart-wrapper h3 {
+        font-size: 21px;
+    }
+
+    .chart-container {
+        height: 300px;
+    }
+}
+
+/* ========================================
+   RESPONSIVE UNTUK HP KECIL
+======================================== */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    .division-card {
+        min-height: auto;
+    }
+
+    .form-wrapper {
+        padding: 18px;
+    }
+
+    .chart-container {
+        height: 280px;
+    }
+}
+
+/* Hormati pengaturan pengurangan animasi */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
