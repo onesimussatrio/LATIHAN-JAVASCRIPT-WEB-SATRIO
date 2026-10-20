@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // =====================================
-    // 1. MENU AKTIF DAN SMOOTH SCROLL
-    // =====================================
 
+// 1. MENU AKTIF DAN SMOOTH SCROLL
     const navLinks = document.querySelectorAll(
         ".navbar .nav-link"
     );
@@ -56,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Memperbarui menu aktif sesuai section yang terlihat
+// Memperbarui menu aktif sesuai section yang terlihat
     const observer = new IntersectionObserver(
         function (entries) {
             const terlihat = entries
@@ -80,10 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(section);
     });
 
-    // =====================================
-    // 2. GRAFIK CHART.JS
-    // =====================================
-
+// 2. GRAFIK CHART.JS
     const canvas = document.getElementById("divisiChart");
 
     if (canvas && typeof Chart !== "undefined") {
@@ -168,10 +163,8 @@ document.addEventListener("DOMContentLoaded", function () {
         );
     }
 
-    // =====================================
-    // 3. FORMULIR PENDAFTARAN
-    // =====================================
-
+    
+// 3. FORMULIR PENDAFTARAN
     const form = document.getElementById("formPendaftaran");
 
     if (form) {

@@ -1,7 +1,5 @@
 
-/* ========================================
-   PENGATURAN DASAR
-======================================== */
+/*PENGATURAN DASAR*/
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +18,7 @@ body {
     color: #ff0000;
 }
 
-/* ========================================
-   NAVBAR
-======================================== */
+/* NAVBAR*/
 .navbar {
     background-color: rgba(16, 16, 20, 0.96);
     padding: 10px 0;
@@ -51,7 +47,7 @@ body {
     border-bottom: 2px solid transparent;
 }
 
-/* MENU AKTIF */
+/*MENU AKTIF*/
 .navbar .nav-link.active {
     color: #f1ff31 !important;
     font-weight: bold;
@@ -75,9 +71,7 @@ body {
     filter: invert(1);
 }
 
-/* ========================================
-   HOME / HERO
-======================================== */
+/*HOME / HERO*/
 .hero {
     position: relative;
     min-height: 100vh;
@@ -129,7 +123,7 @@ body {
     line-height: 1.8;
 }
 
-/* TOMBOL DAFTAR */
+/*TOMBOL DAFTAR*/
 .btn-daftar {
     display: inline-block;
     background-color: #ff3158;
@@ -148,9 +142,7 @@ body {
     border-color: #ff3158;
 }
 
-/* ========================================
-   BAGIAN DIVISI
-======================================== */
+/*BAGIAN DIVISI*/
 .section-dark {
     background-color: #328bff;
     padding: 90px 0;
@@ -207,9 +199,8 @@ body {
     line-height: 1.8;
 }
 
-/* ========================================
-   BAGIAN TENTANG / ABOUT
-======================================== */
+/*BAGIAN TENTANG / ABOUT*/
+
 .about-section {
     background-color: #0b51e7;
     padding: 100px 0;
@@ -227,9 +218,8 @@ body {
     margin-bottom: 0;
 }
 
-/* ========================================
-   GRAFIK CHART.JS
-======================================== */
+/*GRAFIK CHART.JS*/
+
 .chart-wrapper {
     max-width: 850px;
     margin-left: auto;
@@ -264,9 +254,7 @@ body {
     margin-bottom: 0;
 }
 
-/* ========================================
-   BAGIAN PENDAFTARAN
-======================================== */
+/*BAGIAN PENDAFTARAN*/
 .registration-section {
     background-color: #e05e65;
     padding: 90px 0;
@@ -313,9 +301,7 @@ body {
     color: #ffffff;
 }
 
-/* ========================================
-   FOOTER
-======================================== */
+/*FOOTER*/
 .footer {
     background-color: #0b0b0f;
     padding: 35px 0;
@@ -338,16 +324,12 @@ body {
     color: #85858e;
 }
 
-/* ========================================
-   SMOOTH SCROLL DAN OFFSET SECTION
-======================================== */
+/*SMOOTH SCROLL DAN OFFSET SECTION*/
 section {
     scroll-margin-top: 80px;
 }
 
-/* ========================================
-   RESPONSIVE UNTUK TABLET DAN HP
-======================================== */
+/*RESPONSIVE UNTUK TABLET DAN HP*/
 @media (max-width: 768px) {
     .navbar {
         padding: 12px 0;
@@ -409,9 +391,7 @@ section {
     }
 }
 
-/* ========================================
-   RESPONSIVE UNTUK HP KECIL
-======================================== */
+/*RESPONSIVE UNTUK HP KECIL*/
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 39px;
@@ -430,7 +410,7 @@ section {
     }
 }
 
-/* Hormati pengaturan pengurangan animasi */
+/*Hormati pengaturan pengurangan animasi*/
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
