@@ -41,7 +41,7 @@ body {
 }
 
 .nav-link {
-    color: #ff0202 !important;
+    color: #eb2828 !important;
     margin-left: 18px;
     transition: color 0.3s, border-color 0.3s;
     border-bottom: 2px solid transparent;
@@ -416,6 +416,6 @@ section {
     *::before,
     *::after {
         scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
+        transition-duration: 0.01              ms !important;
     }
 }
