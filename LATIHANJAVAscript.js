@@ -167,21 +167,12 @@ document.addEventListener("DOMContentLoaded", function () {
 // 3. FORMULIR PENDAFTARAN
     const form = document.getElementById("formPendaftaran");
 
-    if (form) {
-        form.addEventListener("submit", function (event) {
+if (form) {
+    form.addEventListener("submit", function (event) {
+        if (!form.checkValidity()) {
             event.preventDefault();
-
-            const nama = document.getElementById("nama").value.trim();
-            const divisi = document.getElementById("divisiPilihan").value;
-
-            alert(
-                "Pendaftaran berhasil divalidasi!\n\n" +
-                "Nama: " + nama + "\n" +
-                "Divisi pilihan: " + divisi + "\n\n" +
-                "Catatan: Data ini hanya simulasi dan belum disimpan ke database."
-            );
-
-            form.reset();
-        });
-    }
+            form.reportValidity();
+        }
+    });
+}
 });
