@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Panitia Konser</title>
+
+    -- Bootstrap CSS --
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    -- CSS sendiri --
+    <link rel="stylesheet" href="LATIHANJAVASCRIPTstyle.css">
+</head>
+<body>
+
+NAVBAR 
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="img/GAMBARLOGO.png"
+                     alt="Logo Konser"
+                     class="logo-navbar">
+                CRSL.LAND FESTIVAL
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Buka navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#divisi">Divisi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#daftar">Daftar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+HOME 
+    <section id="home" class="hero">
+        <div class="hero-content container text-center">
+            <p class="hero-label">OPEN RECRUITMENT</p>
+            <h1>JADILAH BAGIAN<br>DARI <span>CRSL.LAND FESTIVAL</span></h1>
+            <p class="hero-description">
+                Bergabunglah menjadi panitia dan ciptakan
+                pengalaman konser yang tidak terlupakan.
+            </p>
+            <a href="#daftar" class="btn btn-daftar">
+                Daftar Sekarang
+            </a>
+        </div>
+    </section>
+
+DIVISI 
+    <section id="divisi" class="section-dark">
+        <div class="container">
+            <div class="section-heading text-center">
+                <p class="section-label">OUR TEAM</p>
+                <h2>DIVISI <span>KEPANITIAAN</span></h2>
+                <p>Pilih divisi yang sesuai dengan minat dan kemampuanmu.</p>
+            </div>
+
+            <div class="row g-4 mt-3">
+                <div class="col-md-6 col-lg-4">
+                    <div class="division-card">
+                        <div class="division-number">01</div>
+                        <h3>Acara</h3>
+                        <p>Mengatur susunan acara dan memastikan konser berjalan sesuai jadwal.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="division-card">
+                        <div class="division-number">02</div>
+                        <h3>Publikasi</h3>
+                        <p>Mengelola media sosial, promosi, dan informasi mengenai konser.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="division-card">
+                        <div class="division-number">03</div>
+                        <h3>Perlengkapan</h3>
+                        <p>Mempersiapkan peralatan dan kebutuhan teknis selama acara.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="division-card">
+                        <div class="division-number">04</div>
+                        <h3>Konsumsi</h3>
+                        <p>Mengatur penyediaan makanan dan minuman bagi panitia serta pengisi acara.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="division-card">
+                        <div class="division-number">05</div>
+                        <h3>Keamanan</h3>
+                        <p>Menjaga ketertiban dan keamanan selama berlangsungnya konser.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="division-card">
+                        <div class="division-number">06</div>
+                        <h3>Dokumentasi</h3>
+                        <p>Mendokumentasikan momen konser melalui foto dan video.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                   ABOUT
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <p class="section-label">ABOUT US</p>
+                    <h2>LEBIH DARI<br>SEKEDAR <span>KONSER</span></h2>
+                </div>
+
+                <div class="col-lg-6">
+                    <p class="about-text">
+                        CRSL.LAND Festival merupakan sebuah acara musik yang
+                        mempertemukan pecinta musik dalam satu panggung.
+                        Kami membuka kesempatan bagi siapa saja yang ingin
+                        mendapatkan pengalaman berorganisasi, bekerja sama,
+                        dan menjadi bagian dari penyelenggaraan konser.
+                    </p>  
+                </div>
+            </div>
+
+GRAFIK CHART.JS
+            <div class="chart-wrapper mt-5">
+                <h3 class="text-center mb-3">Statistik Peminat Divisi</h3>
+                <p class="text-center mb-4">
+                    Data simulasi jumlah peminat setiap divisi kepanitiaan.
+                </p>
+                <div class="chart-container">
+                    <canvas id="divisiChart"></canvas>
+                </div>
+                <p class="chart-note text-center mt-3">
+                    *Data di atas merupakan data statis untuk keperluan demonstrasi.
+                </p>
+            </div>
+        </div>
+
+PENDAFTARAN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    <section id="daftar" class="registration-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <p class="section-label">JOIN OUR TEAM</p>
+                <h2>FORMULIR <span>PENDAFTARAN</span></h2>
+                <p>Isi data diri kamu pada formulir di bawah ini.</p>
+            </div>
+
+            <div class="form-wrapper">
+                <form id="formPendaftaran">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nama" class="form-label">Nama lengkap</label>
+                            <input type="text" class="form-control"
+                                id="nama" placeholder="Masukkan nama lengkap"
+                                required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control"
+                                id="email" placeholder="nama@email.com"
+                                required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="telepon" class="form-label">Nomor telepon</label>
+                            <input type="tel" class="form-control"
+                                id="telepon" placeholder="08xxxxxxxxxx"
+                                required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="usia" class="form-label">Usia</label>
+                            <input type="number" class="form-control"
+                                id="usia" min="15" placeholder="Masukkan usia"
+                                required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="divisiPilihan" class="form-label">Pilih divisi</label>
+                            <select class="form-select" id="divisiPilihan" required>
+                                <option value="" selected disabled>-- Pilih divisi --</option>
+                                <option value="Acara">Acara</option>
+                                <option value="Publikasi">Publikasi</option>
+                                <option value="Perlengkapan">Perlengkapan</option>
+                                <option value="Konsumsi">Konsumsi</option>
+                                <option value="Keamanan">Keamanan</option>
+                                <option value="Dokumentasi">Dokumentasi</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="pengalaman" class="form-label">Pengalaman organisasi</label>
+                            <textarea class="form-control" id="pengalaman"
+                                rows="3" placeholder="Ceritakan pengalamanmu (jika ada)"></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="alasan" class="form-label">Alasan bergabung</label>
+                            <textarea class="form-control" id="alasan"
+                                rows="4" placeholder="Mengapa kamu ingin bergabung?"
+                                required></textarea>
+                        </div>
+
+                        <div class="col-12 text-center mt-4">
+                            <button type="submit" class="btn btn-daftar">
+                                Kirim Pendaftaran
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+FOOTER 
+    <footer class="footer text-center">
+        <div class="container">
+            <h4>CRSL.LAND FESTIVAL</h4>
+            <p>Make Every Beat Count.</p>
+            <small>&copy; 2026 CRSL.LAND Festival All rights reserved.</small>
+        </div>
+    </footer>
+
+JAVASCRIPT BOOTSTRAP 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- LIBRARY CHART.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JAVASCRIPT SENDIRI -->
+    <script src="LATIHANJAVAscript.js"></script>
+</body>
+</html>
